@@ -10,3 +10,4 @@
 8. `git push` nos permite subir los cambios que estan guardados (con los que se ha hecho commit) al repositorio remoto.
 9. `git branch -l` nos muestra la lista de ramas que tiene el repositorio actualmente.
 10. `git checkout/git switch` cambiar de una rama a otra.
+11. `git merge <branch name>` nos permite fusionar los cambios de una rama A a una rama B.
