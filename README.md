@@ -8,3 +8,5 @@
 6. `git log` nos permite ver un registro de los cambios (commits) que se han realizado.
 7. `git remote` nos permite agregar diferentes origines para diferentes repositorios remotos.
 8. `git push` nos permite subir los cambios que estan guardados (con los que se ha hecho commit) al repositorio remoto.
+9. `git branch -l` nos muestra la lista de ramas que tiene el repositorio actualmente.
+10. `git checkout/git switch` cambiar de una rama a otra.
