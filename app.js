@@ -2,6 +2,14 @@ const counterElement = document.getElementById('counter');
 const incrementBtn = document.getElementById('increment');
 const decrementBtn = document.getElementById('decrement');
 
+/**
+*
+* asdljasldkjasdkljaskdljaskd
+*
+*/
+
+console.log('Hello world');
+
 let counter = 0;
 
 const renderCounter = () => {
