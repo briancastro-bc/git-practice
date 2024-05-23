@@ -4,10 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  </style>
 </head>
 <body>
   <h1>Hola</h1>
   <h2>Adios</h2>
   <p>Lorem ipsum dolor sit amet.</p>
+  <div class="container">
+    <button id="increment">
+      Incrementar
+    </button>
+    <p id="counter">0</p>
+    <button id="decrement">
+      Decrementar
+    </button>
+  </div>
+
+  <script src="./app.js"></script>
 </body>
 </html>
