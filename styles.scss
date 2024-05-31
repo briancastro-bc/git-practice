@@ -1,0 +1,85 @@
+/*
+  Uso de una variable en SASS:
+  DO:
+  $nombre-variable;
+
+  DONT:
+  $UpperCase
+  $camelCase
+  $snake_case
+*/
+$my-red-color: #ff0000;
+$my-custom-color: #88C0D0;
+$dark-color: #2E3440;
+$light-color: #ECEFF4;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.dark {
+  background-color: $dark-color;
+  color: $light-color;
+}
+
+.light {
+  background-color: $light-color;
+  color: $dark-color;
+}
+
+@mixin theme($color: gray) {
+  background-color: $color;
+  box-shadow: 5px 5px 5px $color;
+  padding: 5rem;
+  border: 1px solid $color;
+}
+
+/*
+Herencia de estilos en bloque
+*/
+%_flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+%_base-btn {
+  outline: none;
+  border: none;
+  padding: 1rem 1.5rem;
+  background-color: transparent;
+  display: block;
+  font-size: 1rem;
+}
+
+// .myclass {
+//   margin-top: 5rem;
+//   background-color: green;
+// }
+
+/*
+Nesting o anidamiento de estilos
+*/
+.container {
+  @extend %_flex-row;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  gap: 1rem;
+  @include theme(yellow);
+
+  &__counter {
+    font-size: 1.5rem;
+    color: $my-custom-color;
+    font-weight: 700;
+  }
+
+  &__button {
+    @extend %_base-btn;
+    color: black;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    background-color: $my-custom-color;
+  }
+}
